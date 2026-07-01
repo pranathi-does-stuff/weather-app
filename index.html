@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+    <main>
+      <div id="get-info">
+        <h2>Location: </h2>
+        <div id="inputs">
+          <select id="city-dropdown" name="city-name-input">
+            <option value="">Choose a city</option>
+            <option value="new york">New York</option>
+            <option value="los angeles">Los Angeles</option>
+            <option value="chicago">Chicago</option>
+            <option value="paris">Paris</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="london">London</option>
+          </select>
+
+          <button id="get-weather-btn">Get Weather</button>
+        </div>
+      </div>
+      <hr id="main-divider" class="weather-info" hidden>
+      <div id="weather-info-container" class="weather-info">
+        <h1 id="location"></h1>
+        <div id="core-weather-info">
+          <img id="weather-icon"/>
+          <h3 id="weather-main"></h3>
+          <div id="temps">
+            <h2> Temperature: <span id="main-temperature"></span>&degC</h2>
+            <p id="feels-like-label">Feels like: <span id="feels-like"></span>&degC</p>
+          </div>
+
+          
+          <p id="humidity-label">Humidity: <span id="humidity"></span>%</p>
+        </div>
+        <div id="wind-info">
+          <h2>Wind</h2>
+          <img src="https://static.thenounproject.com/png/1129571-200.png" id="wind-img"/>
+          <div id="wind-nums">
+            <p>Speed: <span id="wind"></span> m/s</p>
+            <p>Gust: <span id="wind-gust"></span> m/s</p>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
